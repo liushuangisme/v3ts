@@ -2,13 +2,15 @@
 	<div class="login">
 		<h1>登录</h1>
 		<form @submit.prevent="submitForm">
-			<label>用户名:</label>
-			<input type="text" v-model="username" />
+			<label>用户名:</label><br />
+			<input class="inpt" type="text" v-model="username" />
 			<br />
-			<label>密码:</label>
-			<input type="password" v-model="password" />
 			<br />
-			<button type="submit">登录</button>
+			<label>密码:</label><br />
+			<input class="inpt" type="password" v-model="password" />
+			<br />
+			<br />
+			<button class="btn" type="submit">登录</button>
 		</form>
 	</div>
 </template>
@@ -42,11 +44,28 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .login {
-	background: #787171;
+	background: deepskyblue;
 	margin: 0 auto;
 	width: 400px;
-	height: 1000px;
+	height:600px;
+	h1{
+		padding-top: 30px;
+	}
+	.inpt{
+		height:36px;
+		outline: none;
+		background-color: #fff;
+		border-radius: 20px;
+		border: none;
+		color: black;
+		padding-left: 16px;
+	}
+	.btn{
+		width: 100px;
+		border-radius: 20px;
+		background-color: rgb(37, 124, 205);
+	}
 }
 </style>
