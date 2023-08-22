@@ -1,13 +1,13 @@
 <template>
-	<div>
-		<Carousel :items="items"></Carousel>
+	<div class="content">
+		<Carousel :list="list" :duration="1500" :autoPlay="true"></Carousel>
 		<div>
 			<ul>
 				<li @click="moveTo('1')">跳转tab</li>
 				<li @click="moveTo('2')">跳转mao</li>
 				<li @click="moveTo('3')">跳转todoList</li>
-				<li @click="moveTo('4')">跳转目标说明</li>
-				<li @click="moveTo('5')">跳转目标说明</li>
+				<li @click="moveTo('4')">跳转</li>
+				<li @click="moveTo('5')">跳转</li>
 			</ul>
 		</div>
 	</div>
@@ -22,12 +22,13 @@ export default defineComponent({
 		Carousel
 	},
 	setup() {
-		const items = [
-			{ img: '1', alt: 'Tab 1' },
-			{ img: '2', alt: 'Tab 2' },
-			{ img: '3', alt: 'Tab 3' },
-			{ img: '4', alt: 'Tab 4' }
-		]
+		const list = [
+      { id: 1, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fcloud.jpeg' },
+      { id: 2, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fground.jpeg' },
+      { id: 3, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fnight.jpeg' },
+      { id: 4, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fstreet.jpeg' },
+      { id: 5, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fsun.jpeg' }
+    ]
 		const router = useRouter()
 
 		function moveTo(item){
@@ -40,15 +41,18 @@ export default defineComponent({
 			}
 		}
 		return {
-			items,
+			list,
 			moveTo
 		}
 	}
 })
 </script>
-<style>
-	ul{
-		list-style: none;
-		cursor: pointer;
+<style scoped lang="scss">
+	.content{
+		ul{
+			list-style: none;
+			cursor: pointer;
+			color: rgb(0, 255, 162);
+		}
 	}
 </style>
