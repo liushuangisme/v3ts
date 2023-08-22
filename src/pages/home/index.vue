@@ -6,7 +6,7 @@
 				<li @click="moveTo('1')">跳转tab</li>
 				<li @click="moveTo('2')">跳转mao</li>
 				<li @click="moveTo('3')">跳转todoList</li>
-				<li @click="moveTo('4')">跳转</li>
+				<li @click="moveTo('4')">跳转todoList2</li>
 				<li @click="moveTo('5')">跳转</li>
 			</ul>
 		</div>
@@ -38,6 +38,8 @@ export default defineComponent({
 				router.push('/mao')
 			}else if(item==='3'){
 				router.push('/todo')
+			}else if(item==='4'){
+				router.push('/todo2')
 			}
 		}
 		return {

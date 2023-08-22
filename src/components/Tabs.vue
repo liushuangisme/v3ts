@@ -1,7 +1,7 @@
 <template>
 	<div class="tabs">
 		<ul class="tab-list">
-			<button v-for="(tab, index) in tabs" :key="index" @click="selectTab(index)">
+			<button class="tab-bg" v-for="(tab, index) in tabs" :key="index" @click="selectTab(index)">
 				{{ tab.label }}
 			</button>
 		</ul>
@@ -37,7 +37,7 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style scoped lang="scss">
 .tab-list {
 	list-style: none;
 	margin: 0;
@@ -47,13 +47,21 @@ export default defineComponent({
 .tab-list li {
 	display: inline-block;
 	padding: 10px;
+	outline: none;
+	border: none;
 }
 
 .tab-list li:hover {
 	cursor: pointer;
+	outline: none;
+	border: none;
 }
 
 .tab-content {
 	padding: 10px;
+	color: coral;
+}
+.tab-bg{
+	background-color: rgb(246, 206, 158);
 }
 </style>

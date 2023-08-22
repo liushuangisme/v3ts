@@ -22,5 +22,13 @@ export default [
 		meta: {
 			title: '记事项'
 		}
+	},
+	{
+		path: '/todo2',
+		name: 'todoListIndex2',
+		component: () => import('@/pages/content/TodoList2.vue'),
+		meta: {
+			title: '记事项'
+		}
 	}
 ]
