@@ -30,5 +30,13 @@ export default [
 		meta: {
 			title: '记事项'
 		}
+	},
+	{
+		path: '/notification',
+		name: 'notification',
+		component: () => import('@/pages/content/notice.vue'),
+		meta: {
+			title: '提醒弹框'
+		}
 	}
 ]

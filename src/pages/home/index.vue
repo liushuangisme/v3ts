@@ -7,7 +7,7 @@
 				<li @click="moveTo('2')">跳转mao</li>
 				<li @click="moveTo('3')">跳转todoList</li>
 				<li @click="moveTo('4')">跳转todoList2</li>
-				<li @click="moveTo('5')">跳转</li>
+				<li @click="moveTo('5')">跳转弹框</li>
 			</ul>
 		</div>
 	</div>
@@ -40,6 +40,8 @@ export default defineComponent({
 				router.push('/todo')
 			}else if(item==='4'){
 				router.push('/todo2')
+			}else if(item==='5'){
+				router.push('/notification')
 			}
 		}
 		return {
