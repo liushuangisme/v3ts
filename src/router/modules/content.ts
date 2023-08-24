@@ -38,5 +38,13 @@ export default [
 		meta: {
 			title: '提醒弹框'
 		}
+	},
+	{
+		path: '/pop',
+		name: 'pop',
+		component: () => import('@/pages/content/pop.vue'),
+		meta: {
+			title: '提醒弹框'
+		}
 	}
 ]
