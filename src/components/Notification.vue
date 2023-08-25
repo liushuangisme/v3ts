@@ -215,6 +215,7 @@
           word-wrap: break-word;
           .u-svg {
             position: absolute;
+            left: 10%;
             display: inline-block;
             width: 24px;
             height: 24px;
