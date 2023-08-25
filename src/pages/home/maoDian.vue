@@ -143,5 +143,6 @@ ul{
 }
 li{
   color: rgb(227, 183, 80);
+  cursor: pointer;
 }
 </style>

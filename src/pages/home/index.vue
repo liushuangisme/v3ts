@@ -1,5 +1,6 @@
 <template>
 	<div class="content">
+		<div class="timeline">{{timeline}}</div>
 		<Carousel :list="list" :duration="1500" :autoPlay="true"></Carousel>
 		<div>
 			<ul>
@@ -14,9 +15,10 @@
 	</div>
 </template>
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent,ref} from 'vue'
 import Carousel from '@/components/Carousel.vue'
 import { useRouter } from 'vue-router'
+import {dateFormat} from '@/util/index'
 export default defineComponent({
 	name: 'App',
 	components: {
@@ -31,6 +33,10 @@ export default defineComponent({
       { id: 5, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fsun.jpeg' }
     ]
 		const router = useRouter()
+		const timeline = ref(new Date());
+		setInterval(() => {
+			timeline.value =dateFormat(new Date(), 'YYYY年MM月DD日 HH时mm分ss秒')
+		}, 1000);
 
 		function moveTo(item){
 			if (item==='1') {
@@ -49,13 +55,21 @@ export default defineComponent({
 		}
 		return {
 			list,
-			moveTo
+			moveTo,
+			timeline
 		}
 	}
 })
 </script>
 <style scoped lang="scss">
 	.content{
+		.timeline{
+			width: 500px;
+			height: 100px;
+			line-height: 100px;
+			color: darkslategrey;
+		
+		}
 		ul{
 			list-style: none;
 			cursor: pointer;
