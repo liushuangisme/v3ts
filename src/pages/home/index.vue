@@ -10,6 +10,7 @@
 				<li @click="moveTo('4')">跳转todoList2</li>
 				<li @click="moveTo('5')">跳转弹框</li>
 				<li @click="moveTo('6')">跳转pop</li>
+				<li @click="moveTo('7')">跳转video</li>
 			</ul>
 		</div>
 	</div>
@@ -51,6 +52,8 @@ export default defineComponent({
 				router.push('/notification')
 			}else if(item==='6'){
 				router.push('/pop')
+			}else if(item==='7'){
+				router.push('/video')
 			}
 		}
 		return {
@@ -74,6 +77,7 @@ export default defineComponent({
 			list-style: none;
 			cursor: pointer;
 			color: rgb(0, 255, 162);
+			font-weight: 700;
 		}
 	}
 </style>

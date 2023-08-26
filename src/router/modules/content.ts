@@ -46,5 +46,13 @@ export default [
 		meta: {
 			title: '提醒弹框'
 		}
+	},
+	{
+		path: '/video',
+		name: 'video',
+		component: () => import('@/pages/content/play.vue'),
+		meta: {
+			title: '提醒弹框'
+		}
 	}
 ]
