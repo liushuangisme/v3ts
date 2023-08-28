@@ -49,7 +49,7 @@
       fill: #ff4d4f;
     }
     .bgcolor{
-        color: darkslategray;
+      color: darkslategray;
     }
     </style>
     

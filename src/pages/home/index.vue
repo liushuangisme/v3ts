@@ -11,6 +11,7 @@
 				<li @click="moveTo('5')">跳转弹框</li>
 				<li @click="moveTo('6')">跳转pop</li>
 				<li @click="moveTo('7')">跳转video</li>
+				<li @click="moveTo('8')">跳转input</li>
 			</ul>
 		</div>
 	</div>
@@ -54,6 +55,8 @@ export default defineComponent({
 				router.push('/pop')
 			}else if(item==='7'){
 				router.push('/video')
+			}else if(item==='8'){
+				router.push('/Input')
 			}
 		}
 		return {

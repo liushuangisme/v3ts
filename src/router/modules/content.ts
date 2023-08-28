@@ -54,5 +54,13 @@ export default [
 		meta: {
 			title: '提醒弹框'
 		}
+	},
+	{
+		path: '/Input',
+		name: 'input',
+		component: () => import('@/pages/content/InputBtn.vue'),
+		meta: {
+			title: '输入按钮'
+		}
 	}
 ]
