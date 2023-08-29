@@ -62,5 +62,13 @@ export default [
 		meta: {
 			title: '输入按钮'
 		}
+	},
+	{
+		path: '/Bread',
+		name: 'Bread',
+		component: () => import('@/pages/content/Bread.vue'),
+		meta: {
+			title: '输入按钮'
+		}
 	}
 ]

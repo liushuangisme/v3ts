@@ -18,7 +18,7 @@
     </script>
     <template>
       <div>
-        <h1>Input 输入框</h1>
+        <h1 class="mt30">Input 输入框</h1>
         <h2 class="mt30 mb10">基本使用</h2>
         <Space direction="vertical">
           <Input
