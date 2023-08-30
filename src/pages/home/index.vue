@@ -13,6 +13,7 @@
 				<li @click="moveTo('7')">跳转video</li>
 				<li @click="moveTo('8')">跳转input</li>
 				<li @click="moveTo('9')">跳转Bread</li>
+				<li @click="moveTo('10')">跳转pagination</li>
 			</ul>
 		</div>
 	</div>
@@ -60,6 +61,8 @@ export default defineComponent({
 				router.push('/Input')
 			}else if(item==='9'){
 				router.push('/Bread')
+			}else if(item==='10'){
+				router.push('/pagination')
 			}
 		}
 		return {

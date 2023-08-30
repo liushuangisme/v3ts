@@ -68,7 +68,15 @@ export default [
 		name: 'Bread',
 		component: () => import('@/pages/content/Bread.vue'),
 		meta: {
-			title: '输入按钮'
+			title: '面包屑'
+		}
+	},
+	{
+		path: '/pagination',
+		name: 'pagination',
+		component: () => import('@/pages/content/paginations.vue'),
+		meta: {
+			title: '分页'
 		}
 	}
 ]
