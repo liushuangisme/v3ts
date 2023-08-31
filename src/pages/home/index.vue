@@ -14,6 +14,7 @@
 				<li @click="moveTo('8')">跳转input</li>
 				<li @click="moveTo('9')">跳转Bread</li>
 				<li @click="moveTo('10')">跳转pagination</li>
+				<li @click="moveTo('11')">跳转echarts</li>
 			</ul>
 		</div>
 	</div>
@@ -63,6 +64,8 @@ export default defineComponent({
 				router.push('/Bread')
 			}else if(item==='10'){
 				router.push('/pagination')
+			}else if(item==='11'){
+				router.push('/charts')
 			}
 		}
 		return {

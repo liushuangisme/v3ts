@@ -189,7 +189,7 @@
           min-width: 32px;
           height: 32px;
           display: inline-block;
-          user-select: none; // 禁止选取文本
+          user-select: none; /**禁止选取文本*/
           border: 1px solid #d9d9d9;
           border-radius: 6px;
           background: #FFF;

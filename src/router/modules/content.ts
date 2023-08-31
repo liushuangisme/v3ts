@@ -78,5 +78,12 @@ export default [
 		meta: {
 			title: '分页'
 		}
+	},{
+		path: '/charts',
+		name: 'charts',
+		component: () => import('@/pages/content/charts.vue'),
+		meta: {
+			title: 'echarts'
+		}
 	}
 ]
