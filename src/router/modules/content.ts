@@ -85,5 +85,12 @@ export default [
 		meta: {
 			title: 'echarts'
 		}
+	},{
+		path: '/card',
+		name: 'card',
+		component: () => import('@/pages/content/cardIndex.vue'),
+		meta: {
+			title: 'card'
+		}
 	}
 ]
