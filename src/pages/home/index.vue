@@ -16,6 +16,7 @@
 				<li @click="moveTo('10')">跳转pagination</li>
 				<li @click="moveTo('11')">跳转echarts</li>
 				<li @click="moveTo('12')">跳转card</li>
+				<li @click="moveTo('13')">跳转space</li>
 			</ul>
 		</div>
 	</div>
@@ -69,6 +70,8 @@ export default defineComponent({
 				router.push('/charts')
 			}else if(item==='12'){
 				router.push('/card')
+			}else if(item==='13'){
+				router.push('/space')
 			}
 		}
 		return {

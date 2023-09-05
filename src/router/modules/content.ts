@@ -92,5 +92,12 @@ export default [
 		meta: {
 			title: 'card'
 		}
+	},{
+		path: '/space',
+		name: 'space',
+		component: () => import('@/pages/content/spaceBtn.vue'),
+		meta: {
+			title: 'space'
+		}
 	}
 ]
