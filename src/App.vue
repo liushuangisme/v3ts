@@ -9,6 +9,6 @@
 
 <style scoped lang="scss">
 .con{
-	background-color: aliceblue;
+	background-color:rgb(209, 214, 214);
 }
 </style>

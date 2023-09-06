@@ -17,6 +17,8 @@
 				<li @click="moveTo('11')">跳转echarts</li>
 				<li @click="moveTo('12')">跳转card</li>
 				<li @click="moveTo('13')">跳转space</li>
+				<li @click="moveTo('14')">跳转语法</li>
+				<li @click="moveTo('15')">跳转alert</li>
 			</ul>
 		</div>
 	</div>
@@ -72,6 +74,10 @@ export default defineComponent({
 				router.push('/card')
 			}else if(item==='13'){
 				router.push('/space')
+			}else if(item==='14'){
+				router.push('/watchs')
+			}else if(item==='15'){
+				router.push('/alert')
 			}
 		}
 		return {
@@ -94,7 +100,7 @@ export default defineComponent({
 		ul{
 			list-style: none;
 			cursor: pointer;
-			color: rgb(0, 255, 162);
+			color:dimgray;
 			font-weight: 700;
 		}
 	}

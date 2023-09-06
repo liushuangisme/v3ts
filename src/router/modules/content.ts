@@ -99,5 +99,19 @@ export default [
 		meta: {
 			title: 'space'
 		}
+	},{
+		path: '/watchs',
+		name: 'watchs',
+		component: () => import('@/pages/content/grammar/watch.vue'),
+		meta: {
+			title: 'watchs'
+		}
+	},{
+		path: '/alert',
+		name: 'alert',
+		component: () => import('@/pages/content/alertIndex.vue'),
+		meta: {
+			title: 'alert'
+		}
 	}
 ]

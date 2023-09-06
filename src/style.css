@@ -24,7 +24,7 @@ a:hover {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(209, 214, 214);
   margin: 0;
   display: flex;
   place-items: center;
