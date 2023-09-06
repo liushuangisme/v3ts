@@ -113,5 +113,12 @@ export default [
 		meta: {
 			title: 'alert'
 		}
+	},{
+		path: '/result',
+		name: 'result',
+		component: () => import('@/pages/content/resultIndex.vue'),
+		meta: {
+			title: 'result'
+		}
 	}
 ]

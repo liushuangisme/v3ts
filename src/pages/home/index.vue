@@ -19,6 +19,7 @@
 				<li @click="moveTo('13')">跳转space</li>
 				<li @click="moveTo('14')">跳转语法</li>
 				<li @click="moveTo('15')">跳转alert</li>
+				<li @click="moveTo('16')">跳转result</li>
 			</ul>
 		</div>
 	</div>
@@ -78,6 +79,8 @@ export default defineComponent({
 				router.push('/watchs')
 			}else if(item==='15'){
 				router.push('/alert')
+			}else if(item==='16'){
+				router.push('/result')
 			}
 		}
 		return {
