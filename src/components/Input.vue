@@ -170,6 +170,7 @@
         border-inline-start: 0;
       }
       .m-input {
+        box-sizing: border-box;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.88);
         line-height: 1.5714285714285714;

@@ -81,3 +81,6 @@ export function dateFormat (timestamp: number|string|Date, format = 'YYYY-MM-DD 
   }
   return showTime
 }
+export function formatNumber(value:'string'){
+  return Number(value)
+}

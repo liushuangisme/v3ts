@@ -120,5 +120,12 @@ export default [
 		meta: {
 			title: 'result'
 		}
+	},{
+		path: '/statisticIndex',
+		name: 'statisticIndex',
+		component: () => import('@/pages/content/statisticIndex.vue'),
+		meta: {
+			title: 'statisticIndex'
+		}
 	}
 ]
