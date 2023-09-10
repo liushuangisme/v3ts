@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import { ref, computed, onMounted } from 'vue'
+    import Button from '@/components/Button.vue'
     import type { Slot } from 'vue'
     interface Props {
       title?: string|Slot // 确认框的标题

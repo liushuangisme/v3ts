@@ -76,8 +76,18 @@
       </div>
     </template>
     <style lang="scss" scoped>
-    /* @primary: #1677FF;
+    /* 
+    less 变量
+    @primary: #1677FF;
     @danger: #FF4D4F; */
+    /* scss变量 */
+    $primary-color:#1677FF;
+    $danger-color:#FF4D4F; 
+    @mixin fade($color,$opacity) {
+      background-color:$color;
+      border-color:$color;
+      opacity:$opacity;
+    }   
     .m-btn-wrap {
       display: inline-block;
       .m-btn {
@@ -137,28 +147,38 @@
         border-color: #d9d9d9;
         box-shadow: 0 2px 0 rgba(0, 0, 0, .02);
         &:hover {
-          color: fade(#1677FF, 80%);
-          border-color: fade(#1677FF, 80%);
+          color:#1677FF;
+          border-color:#1677FF;
         }
         &:active {
-          color: shade(#1677FF, 12%);
-          border-color: shade(#1677FF, 12%);
+          color:#1677FF;
+          border-color:#1677FF;
+          /* color: shade(#1677FF, 12%);
+          border-color: shade(#1677FF, 12%); */
         }
       }
       .default {
-        /* .fade(); */
+        color: #1677FF;
+        background-color:#fff;
+        box-shadow: 0 2px 0 rgba(5, 145, 255, .1);
+        &:hover {
+          @include fade(#1677FF,0.8);
+          color:#fff;
+        }
+        &:active {
+          @include fade(#1677FF,0.8);
+          color:#fff;
+        }
       }
       .primary {
         color: #fff;
         background-color: #1677FF;
         box-shadow: 0 2px 0 rgba(5, 145, 255, .1);
         &:hover {
-          background-color: fade(#1677FF, 80%);
-          border-color: fade(#1677FF, 80%);
+          @include fade(#1677FF,0.8)
         }
         &:active {
-          background-color: shade(#1677FF, 12%);
-          border-color: shade(#1677FF, 12%);
+          @include fade(#1677FF,0.8)
         }
       }
       .danger {
@@ -168,12 +188,14 @@
         text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
         box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
         &:hover {
-          background-color: fade(#FF4D4F, 80%);
-          border-color: fade(#FF4D4F, 80%);
+          @include fade(#FF4D4F,0.8)
+          /* background-color: fade(#FF4D4F, 80%);
+          border-color: fade(#FF4D4F, 80%); */
         }
         &:active {
-          background-color: shade(#FF4D4F, 12%);
-          border-color: shade(#FF4D4F, 12%);
+          @include fade(#FF4D4F,0.8)
+          /* background-color: shade(#FF4D4F, 12%);
+          border-color: shade(#FF4D4F, 12%); */
         }
       }
       .dashed {
@@ -191,13 +213,15 @@
       .reverse {
         &:hover {
           color: #fff;
-          background-color: fade(#1677FF, 80%);
-          border-color: fade(#1677FF, 80%);
+          @include fade(#1677FF,0.8)
+          /* background-color: fade(#1677FF, 80%);
+          border-color: fade(#1677FF, 80%); */
         }
         &:active {
           color: #fff;
-          background-color: shade(#1677FF, 12%);
-          border-color: shade(#1677FF, 12%);
+          @include fade(#1677FF,0.8)
+          /* background-color: shade(#1677FF, 12%);
+          border-color: shade(#1677FF, 12%); */
         }
       }
       .small {
