@@ -21,6 +21,7 @@
 				<li @click="moveTo('15')">跳转alert</li>
 				<li @click="moveTo('16')">跳转result</li>
 				<li @click="moveTo('17')">跳转statisticIndex</li>
+				<li @click="moveTo('18')">跳转backTopIndex</li>
 			</ul>
 		</div>
 	</div>
@@ -84,6 +85,8 @@ export default defineComponent({
 				router.push('/result')
 			}else if(item==='17'){
 				router.push('/statisticIndex')
+			}else if(item==='18'){
+				router.push('/backTopIndex')
 			}
 		}
 		return {

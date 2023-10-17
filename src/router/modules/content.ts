@@ -127,5 +127,12 @@ export default [
 		meta: {
 			title: 'statisticIndex'
 		}
+	},{
+		path: '/backTopIndex',
+		name: 'backTopIndex',
+		component: () => import('@/pages/content/backTopIndex.vue'),
+		meta: {
+			title: 'backTopIndex'
+		}
 	}
 ]
