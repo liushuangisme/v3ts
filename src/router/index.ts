@@ -4,8 +4,6 @@ import LoginRouter from './modules/login'
 // 引入 test.ts
 import contentRouter from './modules/content'
 const routes: RouteRecordRaw[] = [
-	...LoginRouter,
-	...contentRouter,
 	{
 		path: '/home',
 		name: 'homeIndex',
@@ -13,7 +11,9 @@ const routes: RouteRecordRaw[] = [
 		meta: {
 			title: '首页'
 		}
-	}
+	},
+	...LoginRouter,
+	...contentRouter,
 ]
 const router = createRouter({
 	history: createWebHistory(),
