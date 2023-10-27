@@ -9,9 +9,11 @@
 		"preview": "vite preview",
 		"lint": "eslint src",
 		"fix": "eslint src --fix",
-		"format": "prettier --write \"./**/*.{html,vue,js,ts,json,md}\" "
+		"format": "prettier --write \"./**/*.{html,vue,js,ts,json,md}\" ",
+		"lint:pritter": "prettier --write src/"
 	},
 	"dependencies": {
+		"@vueuse/core": "^10.5.0",
 		"chalk": "^4.1.2",
 		"echarts": "^5.4.3",
 		"pinia": "^2.1.6",
