@@ -22,6 +22,7 @@
 				<li @click="moveTo('16')">跳转result</li>
 				<li @click="moveTo('17')">跳转statisticIndex</li>
 				<li @click="moveTo('18')">跳转backTopIndex</li>
+        <li @click="moveTo('19')">跳转number</li>
 			</ul>
 		</div>
 	</div>
@@ -87,7 +88,9 @@ export default defineComponent({
 				router.push('/statisticIndex')
 			}else if(item==='18'){
 				router.push('/backTopIndex')
-			}
+			}else if(item==='19'){
+        router.push('/numberIndex')
+      }
 		}
 		return {
 			list,
@@ -104,7 +107,7 @@ export default defineComponent({
 			height: 100px;
 			line-height: 100px;
 			color: darkslategrey;
-		
+
 		}
 		ul{
 			list-style: none;

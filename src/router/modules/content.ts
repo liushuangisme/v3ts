@@ -134,5 +134,12 @@ export default [
 		meta: {
 			title: 'backTopIndex'
 		}
+	},{
+		path: '/numberIndex',
+		name: 'numberIndex',
+		component: () => import('@/pages/content/Number.vue'),
+		meta: {
+			title: 'numberIndex'
+		}
 	}
 ]

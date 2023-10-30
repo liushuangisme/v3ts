@@ -46,7 +46,7 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .login {
-	background: deepskyblue;
+	background: #737373;
 	margin: 0 auto;
 	width: 400px;
 	height:600px;
