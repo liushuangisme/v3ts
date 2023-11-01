@@ -39,11 +39,11 @@ export default defineComponent({
 	},
 	setup() {
 		const list = [
-      { id: 1, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fcloud.jpeg' },
-      { id: 2, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fground.jpeg' },
-      { id: 3, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fnight.jpeg' },
-      { id: 4, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fstreet.jpeg' },
-      { id: 5, imgUrl: 'https://code-1307161657.cos.ap-beijing.myqcloud.com/images%2Fsun.jpeg' }
+      { id: 1, imgUrl: '' },
+      { id: 2, imgUrl: '' },
+      { id: 3, imgUrl: '' },
+      { id: 4, imgUrl: '' },
+      { id: 5, imgUrl: '' }
     ]
 		const router = useRouter()
 		const timeline = ref(new Date());

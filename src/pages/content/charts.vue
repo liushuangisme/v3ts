@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import GuageChart from '@/components/GuageChart.vue'
+    import GaugeChart from '@/components/GaugeChart.vue'
     import { ref } from 'vue'
     const gaugeData = ref([
         {
@@ -31,4 +31,3 @@
           :height="500" />
       </div>
     </template>
-    
